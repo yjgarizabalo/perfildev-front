@@ -1,0 +1,7 @@
+Mysql 23/11/2019
+
+windows service name: MySQL80
+pass: Perfildev#19#_dev
+
+user: root
+pass: Perfildev#19#_dev

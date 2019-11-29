@@ -63,7 +63,6 @@ body {
     top: -8px;
     padding: 0 3px;
     font-size: .7rem;
-
 }
 
 
@@ -118,6 +117,44 @@ body {
 }
 
 .input-group .label-pass {
+    color: grey;
+    position: absolute;
+    top: 15px;
+    left: 13px;
+    background: #fff;
+    transition: .5s;
+}
+
+/* intput add */
+
+.input-group .input-add {
+    outline: none;
+    border: 1px solid gray;
+    padding: 13px 13px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 370px;
+}
+
+.input-group .input-add:valid + .label{
+    top: -8px;
+    padding: 0 3px;
+    font-size: .7rem;
+}
+
+
+.input-group .input-add:focus {
+    border: 1.5px solid royalblue;
+}
+
+.input-group .input-add:focus + label {
+    top: -8px;
+    padding: 0 3px;
+    font-size: .7rem;
+    color: royalblue;
+}
+
+.input-group .label-add {
     color: grey;
     position: absolute;
     top: 15px;

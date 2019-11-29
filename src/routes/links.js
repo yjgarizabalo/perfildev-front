@@ -15,7 +15,12 @@ router.post('/add', async (req, res) => {
         description
     }
     await pool.query('INSERT INTO links set ?', [newLink])
-    res.send('recibido')
+    res.redirect('/links')
+})
+
+router.get('/', async (req, res) => {
+   const links = await pool.query('SELECT * FROM links')
+   res.render('links/list.hbs', {links})
 })
 
 module.exports = router

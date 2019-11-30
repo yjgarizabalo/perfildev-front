@@ -48,30 +48,31 @@ body {
     position: relative;
 }
 
-/* input password */
+/* input correo */
 
 .input-group .input-area {
     outline: none;
     border: 1px solid gray;
-    padding: 13px 13px;
-    font-size: 1rem;
+    padding: 10px 10px;
+    font-size: .7rem;
     border-radius: 5px;
     width: 370px;
 }
 
 .input-group .input-area:valid + .label{
-    top: -8px;
+    top: -10px;
     padding: 0 3px;
     font-size: .7rem;
+    color: gray;
 }
-
 
 .input-group .input-area:focus {
     border: 1.5px solid royalblue;
 }
 
-.input-group .input-area:focus + label {
-    top: -8px;
+
+.input-group .input-area:focus + .label {
+    top: -12px;
     padding: 0 3px;
     font-size: .7rem;
     color: royalblue;
@@ -80,19 +81,20 @@ body {
 .input-group .label {
     color: grey;
     position: absolute;
-    top: 15px;
+    top: 10px;
     left: 13px;
     background: #fff;
     transition: .5s;
 }
+
 
 /* input password */
 
 .input-group .input-pass {
     outline: none;
     border: 1px solid gray;
-    padding: 13px 13px;
-    font-size: 1rem;
+    padding: 10px 10px;
+    font-size: .7rem;
     border-radius: 5px;
     width: 370px;
 }
@@ -110,7 +112,7 @@ body {
 }
 
 .input-group .input-pass:focus + label {
-    top: -8px;
+    top: -10px;
     padding: 0 3px;
     font-size: .7rem;
     color: royalblue;
@@ -119,7 +121,7 @@ body {
 .input-group .label-pass {
     color: grey;
     position: absolute;
-    top: 15px;
+    top: 13px;
     left: 13px;
     background: #fff;
     transition: .5s;

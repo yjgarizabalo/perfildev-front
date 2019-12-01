@@ -46,119 +46,119 @@ body {
 
 .input-group {
     position: relative;
+    margin-bottom: 15px auto;
 }
 
-/* input password */
+/* input*/
 
-.input-group .input-area {
-    outline: none;
-    border: 1px solid gray;
-    padding: 13px 13px;
-    font-size: 1rem;
+.input-area {
+    width: 70%;
+    height: 50px;
     border-radius: 5px;
-    width: 370px;
-}
-
-.input-group .input-area:valid + .label{
-    top: -8px;
-    padding: 0 3px;
-    font-size: .7rem;
-}
-
-
-.input-group .input-area:focus {
-    border: 1.5px solid royalblue;
-}
-
-.input-group .input-area:focus + label {
-    top: -8px;
-    padding: 0 3px;
-    font-size: .7rem;
-    color: royalblue;
-}
-
-.input-group .label {
-    color: grey;
-    position: absolute;
-    top: 15px;
-    left: 13px;
-    background: #fff;
-    transition: .5s;
-}
-
-/* input password */
-
-.input-group .input-pass {
-    outline: none;
-    border: 1px solid gray;
-    padding: 13px 13px;
+    border: 1px solid #aaaaaa;
+    padding: 10px 10px;
     font-size: 1rem;
-    border-radius: 5px;
-    width: 370px;
+    background: transparent;
+    position: relative;
 }
 
-.input-group .input-pass:valid + .label{
-    top: -8px;
-    padding: 0 3px;
-    font-size: .7rem;
-
-}
-
-
-.input-group .input-pass:focus {
-    border: 1.5px solid royalblue;
-}
-
-.input-group .input-pass:focus + label {
-    top: -8px;
-    padding: 0 3px;
-    font-size: .7rem;
-    color: royalblue;
-}
-
-.input-group .label-pass {
-    color: grey;
+.input-area + .label {
     position: absolute;
-    top: 15px;
-    left: 13px;
-    background: #fff;
-    transition: .5s;
-}
-
-/* intput add */
-
-.input-group .input-add {
-    outline: none;
-    border: 1px solid gray;
-    padding: 13px 13px;
+    top: 13px;
+    left: 5px;
     font-size: 1rem;
+    background-color: #ffffff;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #aaaaaa;
+    transition: 0.1s ease-in-out;
+}
+
+.input-area:focus {
+    outline: none;
+    border: 1.5px solid rebeccapurple;
+    transition: all 0.1s ease-in-out;
+}
+
+.input-area:focus + .label, .input-area.has_class + .label {
+   top:-8px;
+   color: rebeccapurple;
+   font-size: .7rem; 
+}
+
+/* input-add */
+
+.input-add {
+    width: 100%;
+    height: auto;
     border-radius: 5px;
-    width: 370px;
+    border: 1px solid #aaaaaa;
+    padding: 10px 10px;
+    font-size: 1rem;
+    background: transparent;
+    position: relative;
 }
 
-.input-group .input-add:valid + .label{
-    top: -8px;
-    padding: 0 3px;
-    font-size: .7rem;
-}
-
-
-.input-group .input-add:focus {
-    border: 1.5px solid royalblue;
-}
-
-.input-group .input-add:focus + label {
-    top: -8px;
-    padding: 0 3px;
-    font-size: .7rem;
-    color: royalblue;
-}
-
-.input-group .label-add {
-    color: grey;
+.input-add + .label {
     position: absolute;
-    top: 15px;
-    left: 13px;
-    background: #fff;
-    transition: .5s;
+    top: 13px;
+    left: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #aaaaaa;
+    transition: 0.1s ease-in-out;
+}
+
+.input-add:focus {
+    outline: none;
+    border: 1.5px solid rebeccapurple;
+    transition: all 0.1s ease-in-out;
+}
+
+.input-add:focus + .label, .input-add.has_class + .label {
+   top:-8px;
+   color: rebeccapurple;
+   font-size: .7rem; 
+}
+
+/* input-edit */
+
+.input-edit {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #aaaaaa;
+    padding: 10px 10px;
+    font-size: 1rem;
+    background: transparent;
+    position: relative;
+}
+
+.input-edit + .label {
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #aaaaaa;
+    transition: 0.1s ease-in-out;
+}
+
+.input-edit:focus {
+    outline: none;
+    border: 1.5px solid rebeccapurple;
+    transition: all 0.1s ease-in-out;
+}
+
+.input-edit:focus + .label, .input-edit.has_class + .label {
+   top:-8px;
+   color: rebeccapurple;
+   font-size: .7rem; 
 }

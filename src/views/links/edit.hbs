@@ -3,17 +3,17 @@
         <div class="col-md-4 mx-auto">
             <div class="card">
                 <div class="card-body">
-                    <form action="/links/add" method="POST">
+                    <form action="/links/edit/{{link.id}}" method="POST">
                     <div class="input-group mb-3">
-                        <input type="text" class="input-add" name="title"  autofocus>
+                        <input type="text" value="{{link.title}}" class="input-edit" name="title"  autofocus>
                         <label class="label">Titulo</label>
                     </div>
                     <div class="input-group mb-3">
-                        <input type="url" name="url" class="input-add">
+                        <input type="url" value="{{link.url}}" name="url" class="input-edit"  autofocus>
                         <label class="label">URL</label>
                     </div>
                      <div class="input-group mb-3">
-                         <textarea name="description" rows="2" class="input-add"></textarea>
+                         <textarea name="description"  rows="2" class="input-edit" autofocus>{{link.description}}"</textarea>
                          <label class="label">descripcion</label>
                      </div>
                      <div class="form-group">

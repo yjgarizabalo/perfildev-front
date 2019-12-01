@@ -23,4 +23,30 @@ router.get('/', async (req, res) => {
    res.render('links/list.hbs', {links})
 })
 
+router.get('/delete/:id', async (req, res) =>{
+    const { id } = req.params
+    await pool.query('DELETE FROM links WHERE ID = ?', [id])
+    res.redirect('/links')
+})
+
+router.get('/edit/:id', async (req, res) => {
+    const { id } = req.params
+    const links = await pool.query('SELECT * FROM links WHERE id = ?', [id])
+    res.render('links/edit.hbs', {link: links[0]})
+})
+
+router.post('/edit/:id', async (req, res) => {
+    const { id } = req.params
+    const { title, url, description } = req.body
+    const newLink = {
+        title,
+        url,
+        description
+    }
+    console.log(newLink)
+   await pool.query('UPDATE links set ? WHERE id = ?', [newLink, id])
+   res.redirect('/links')
+    
+})
+
 module.exports = router

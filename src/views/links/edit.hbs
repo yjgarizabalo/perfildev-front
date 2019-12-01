@@ -4,17 +4,14 @@
             <div class="card">
                 <div class="card-body">
                     <form action="/links/edit/{{link.id}}" method="POST">
-                    <div class="input-group mb-3">
-                        <input type="text" value="{{link.title}}" class="input-edit" name="title"  autofocus>
-                        <label class="label">Titulo</label>
+                    <div class="form-group">
+                        <input type="text" value="{{link.title}}" placeholder="Titulo" class="form-control" name="title" autofocus>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="url" value="{{link.url}}" name="url" class="input-edit"  autofocus>
-                        <label class="label">URL</label>
+                    <div class="form-group">
+                        <input type="url" value="{{link.url}}" placeholder="URL" name="url" class="form-control">
                     </div>
-                     <div class="input-group mb-3">
-                         <textarea name="description"  rows="2" class="input-edit" autofocus>{{link.description}}"</textarea>
-                         <label class="label">descripcion</label>
+                     <div class="form-group">
+                         <textarea name="description" placeholder="Descripcion" rows="2" class="form-control">{{link.description}}</textarea>
                      </div>
                      <div class="form-group">
                          <button class="btn btn-primary btn-block">

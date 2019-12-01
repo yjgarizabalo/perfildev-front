@@ -21,9 +21,26 @@
     {{> navigation}}
     <!-- endnavbar-perfildev -->
 
+
     <!-- hero-perfildev -->
-     {{> hero}}
+    {{> hero}}
     <!-- endhero-perfildev -->
+
+    {{!-- Mensaje --}}
+    {{#if success}}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 mx-auto">
+                <div class="alert alert-success alert-dismissible fade show" role="alert">
+                    {{success}}
+                    <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                        <samp aria-hidden="true">&times;</samp>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/if}}
 
     {{{ body }}}
 
@@ -32,7 +49,7 @@
     <script src="/assets/js/bootstrap.js"></script>
     <script src="/assets/js/core.js"></script>
     <script src="/assets/js/typewriter.js"></script>
-     <script src="/assets/js/form.js"></script>
+    <script src="/assets/js/form.js"></script>
 </body>
 
 </html>

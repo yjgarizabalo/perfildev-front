@@ -15,6 +15,7 @@ router.post('/add', async (req, res) => {
         description
     }
     await pool.query('INSERT INTO links set ?', [newLink])
+    req.flash('success', 'Link guradado correctamente')
     res.redirect('/links')
 })
 

@@ -4,17 +4,14 @@
             <div class="card">
                 <div class="card-body">
                     <form action="/links/add" method="POST">
-                    <div class="input-group mb-3">
-                        <input type="text" class="input-add" name="title"  autofocus>
-                        <label class="label">Titulo</label>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control" placeholder="titulo" name="title" autofocus>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="url" name="url" class="input-add">
-                        <label class="label">URL</label>
+                    <div class="form-group mb-3">
+                        <input type="url" name="url" placeholder="URL" class="form-control">
                     </div>
-                     <div class="input-group mb-3">
-                         <textarea name="description" rows="2" class="input-add"></textarea>
-                         <label class="label">descripcion</label>
+                     <div class="form-group mb-3">
+                         <textarea name="description" placeholder="Descripcion" rows="2" class="form-control"></textarea>
                      </div>
                      <div class="form-group">
                          <button class="btn btn-primary btn-block">

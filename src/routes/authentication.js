@@ -7,9 +7,10 @@ router.get('/signup', (req, res) => {
    res.render('auth/signup.hbs')
 })
 
-router.post('/signup', passport.authenticate('local.signup', {
+
+router.post('/signup', passport.authenticate('local.signup', { 
     successRedirect: '/profile',
-    failureRedirect: '/signup.hbs',
+    failureRedirect: '/signup',
     failureFlash: true
 }))
 

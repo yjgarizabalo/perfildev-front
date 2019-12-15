@@ -1,6 +1,6 @@
 <!-- navbar-perfildev -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
         <img src="/assets/img/perfildev-logo-dark.svg" width="120" height="auto" class="d-inline-block align-top"
             alt="perfildev-logo-dark">
     </a>
@@ -52,6 +52,10 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">{{user.username}}</a>
+            </li>
+            {{else}}
+            <li class="nav-item">
+                <a class="nav-link" href="/signin">Iniciar sesión</a>
             </li>
             {{/if}}
         </ul>

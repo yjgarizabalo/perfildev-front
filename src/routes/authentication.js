@@ -2,23 +2,23 @@ const express = require('express')
 const router = express.Router()
 
 const passport = require('passport')
-const {isLoggedIn} = require('../lib/auth')
+const { isLoggedIn, isNotloggedin } = require('../lib/auth')
 
-router.get('/signup', (req, res) => {
+router.get('/signup',  isNotloggedin, (req, res) => {
     res.render('auth/signup.hbs')
 })
 
-router.post('/signup', passport.authenticate('local.signup', {
+router.post('/signup', isNotloggedin, passport.authenticate('local.signup', {
     successRedirect: '/profile',
     failureRedirect: '/signup',
     failureFlash: true
 }))
 
-router.get('/signin', (req, res) => {
+router.get('/signin', isNotloggedin, (req, res) => {
     res.render('auth/signin.hbs')
 })
 
-router.post('/signin', (req, res) => {
+router.post('/signin', isNotloggedin,  (req, res) => {
     passport.authenticate('local.signin', {
         successRedirect: '/profile',
         failureRedirect: '/signin',
@@ -32,7 +32,7 @@ router.get('/profile', isLoggedIn, (req, res) => {
 
 // Cerrar sesión
 
-router.get('/logout', (req, res) => {
+router.get('/logout', isLoggedIn, (req, res) => {
     req.logOut()
     res.redirect('/signin')
 })

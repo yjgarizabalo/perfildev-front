@@ -8,20 +8,24 @@ router.get('/add', isLoggedIn, (req, res) => {
     res.render('links/add.hbs')
 })
 
+// agregar una ruta
+
 router.post('/add', isLoggedIn, async (req, res) => {
     const { title, url, description } = req.body
     const newLink = {
         title,
         url,
-        description
+        description,
+        user_id: req.user.id
     }
+    // guardar links en la base de datos
     await pool.query('INSERT INTO links set ?', [newLink])
     req.flash('success', 'Link guradado correctamente')
     res.redirect('/links')
 })
 
 router.get('/', isLoggedIn, async (req, res) => {
-   const links = await pool.query('SELECT * FROM links')
+   const links = await pool.query('SELECT * FROM links WHERE user_id = ?', [req.user.id])
    res.render('links/list.hbs', {links})
 })
 
@@ -38,13 +42,15 @@ router.get('/edit/:id', isLoggedIn, async (req, res) => {
     res.render('links/edit.hbs', {link: links[0]})
 })
 
+// editar un enlaze 
+
 router.post('/edit/:id', isLoggedIn, async (req, res) => {
     const { id } = req.params
     const { title, url, description } = req.body
     const newLink = {
         title,
         url,
-        description
+        description,
     }
     console.log(newLink)
    await pool.query('UPDATE links set ? WHERE id = ?', [newLink, id])

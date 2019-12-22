@@ -21,6 +21,8 @@ body {
     top: 0;
     width: 100%;
     height: 100vh;
+    background: url(../img/bg-jobs-perfildev.svg);
+    background-size: cover;
 }
 
 .h100 {

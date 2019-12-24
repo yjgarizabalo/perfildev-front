@@ -11,8 +11,8 @@ class Search {
     init() {
         let input, listContainer;
         this.el.innerHTML = `
-			<input placeholder="¿Que profesión eres?" type="text" class="form-control mr-sm-2  input"/>
-			<list-group class="is-visible" id="searchList"></list-group>
+			<input placeholder="¿Que profesión eres?" type="text" class="form-control mr-sm-2 w-100  input"/>
+			<list-group class=" is-visible" id="searchList"></list-group>
 		`;
         input = document.querySelector('.input');
         listContainer = document.querySelector('#searchList');
@@ -39,7 +39,7 @@ class Search {
     }
 
     updateList(el, text) {
-        el.innerHTML += `<li class="list-group-item">${text}</li>`;
+        el.innerHTML += `<div class="list-group-item list-group-item-action">${text}</div>`;
     }
 
     add(item) {

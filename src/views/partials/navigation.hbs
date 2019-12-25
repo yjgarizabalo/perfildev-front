@@ -1,5 +1,5 @@
 <!-- navbar-perfildev -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top >">
     <a class="navbar-brand" href="/">
         <img src="/assets/img/perfildev-logo-dark.svg" width="120" height="auto" class="d-inline-block align-top"
             alt="perfildev-logo-dark">
@@ -29,14 +29,11 @@
 
         </ul>
         <ul class="navbar-nav ml-lg-auto">
-            <form class="form-inline my-2 my-lg-0">
-                <div style="width: 400px;" class="buscador" id="bs1"></div>
+            <form class="form-inline my-2 my-lg-0 ml-2">
+                <div style="width: 420px;" class="buscador" id="bs1"></div>
             </form>
             <li class="nav-item">
-                <a class="nav-link" href="/logout">¿Que es perfildev?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/logout">Buenas notas vs Aprender</a>
+                <a class="nav-link ml-2" href="/">¿Que es perfildev?</a>
             </li>
             {{#if user}}
             <li class="nav-item active">
@@ -64,7 +61,10 @@
             </li>
             {{else}}
             <li class="nav-item">
-                <a class="nav-link" href="/signin">Iniciar sesión</a>
+                <a class="nav-link ml-2" href="/signin">Iniciar sesión</a>
+            </li>
+            <li>
+                <a class="btn btn-outline-primary ml-2" href="/signup">Registrate</a>
             </li>
             {{/if}}
         </ul>

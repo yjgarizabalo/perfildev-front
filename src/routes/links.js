@@ -59,4 +59,10 @@ router.post('/edit/:id', isLoggedIn, async (req, res) => {
     
 })
 
+// about
+
+router.get('/about', (req, res) => {
+    res.render('links/about.hbs')
+})
+
 module.exports = router

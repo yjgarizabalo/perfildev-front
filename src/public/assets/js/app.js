@@ -4,8 +4,8 @@ let buscador =  new Search({
     el: '#bs1',
     list: [
         '👨‍💻 <a class="text-decoration-none text-body" href="/">Desarrollador web</a>',
-        '👨‍💻 <a class="text-decoration-none text-body" href="/">Desarrollador back-end</a>',
-        '👨‍💻 <a class="text-decoration-none text-body" href="/">Desarrollador front-end</a>',
+        '👨‍💻 <a class="text-decoration-none text-body" href="/">Programador back-end</a>',
+        '👨‍💻 <a class="text-decoration-none text-body" href="/">Programador front-end</a>',
         '👨‍💼 <a class="text-decoration-none text-body" href="/">Ingenidero de sistemas</a>',
         '👨‍🏫 <a class="text-decoration-none text-body" href="/">Analista de sistemas</a>', 
         '👨‍🔧 <a class="text-decoration-none text-body" href="/">Tecnico de mantenimiento de computadores</a>',

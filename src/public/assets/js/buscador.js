@@ -11,7 +11,7 @@ class Search {
     init() {
         let input, listContainer;
         this.el.innerHTML = `
-			<input placeholder="¿Que profesión eres?" type="text" class="form-control mr-sm-2 w-100  input"/>
+			<input placeholder="¿Que profesión eres?" type="text" class="form-control mr-sm-2 w-100 small  input"/>
 			<list-group class=" is-visible" id="searchList"></list-group>
 		`;
         input = document.querySelector('.input');

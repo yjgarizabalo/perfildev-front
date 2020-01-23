@@ -4,12 +4,13 @@ var typewriter = new Typewriter(app, {
     loop: true
 });
 
-typewriter.typeString('Hello World!')
+typewriter
+    .typeString('Son todos Bienvenidos:  ')
     .pauseFor(2500)
-    .deleteAll()
-    .typeString('Strings can be removed')
+    .deleteChars(1)
+    .typeString('<strong>Desarrollador web 👨‍💻!</strong>')
     .pauseFor(2500)
-    .deleteChars(7)
-    .typeString('<strong>altered!</strong>')
+    .deleteChars(24)
+    .typeString('<strong> Programador back-end 👨‍💻!</strong>')
     .pauseFor(2500)
     .start();

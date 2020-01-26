@@ -287,6 +287,19 @@ body {
 
 /* endregistrate a la comunidad */
 
+
+/* about */
+
+.hero-about {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background: url(../img/bg-perfildev-about.svg);
+    background-size: cover;
+}
+
+/* endabout */
+
 /* footer */
 
 footer.footer {
@@ -295,3 +308,4 @@ footer.footer {
 }
 
 /* endfooter */
+

@@ -298,6 +298,14 @@ body {
     background-size: cover;
 }
 
+.content-hero-about {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
 /* endabout */
 
 /* footer */

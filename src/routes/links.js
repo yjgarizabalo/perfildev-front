@@ -65,8 +65,16 @@ router.get('/about', (req, res) => {
     res.render('links/about.hbs')
 })
 
+// perfiles
+
 router.get('/dev-web', (req, res) => {
     res.render('links/dev-web.hbs')
+})
+
+// contacto
+
+router.get('/contact', (req, res) => {
+    res.render('links/contact.hbs')
 })
 
 module.exports = router

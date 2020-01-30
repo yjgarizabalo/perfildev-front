@@ -5,7 +5,7 @@ var typewriter = new Typewriter(app, {
 });
 
 typewriter
-    .typeString('Son todos Bienvenidos:  ')
+    .typeString('inspirar a todos:  ')
     .pauseFor(2500)
     .deleteChars(1)
     .typeString('<strong>Desarrollador web 👨‍💻!</strong>')

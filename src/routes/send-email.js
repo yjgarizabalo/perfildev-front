@@ -1,40 +1,42 @@
-const { Router }  = require('express')
-const  nodemailer = require('nodemailer')
+const { Router } = require('express')
+const nodemailer = require('nodemailer')
+
+
 const router = Router()
 
-router.post('/send-email', async (req, res) => {
-    const { email } = req.body
+router.post('/haz-parte', async (req, res) => {
+   const { email } = req.body
 
-    contentHTML = `
+   contentHTML = `
        <h1>Informacion de usuario</h1>
        <ul>
           <li>Email: ${email}</li>
        </ul>
     `
-    const trnasporter =  nodemailer.createTransport({
-       host: 'mail.belihebe.com',
-       port: 587,
-       secure: false,
-       auth: {
-          user: 'test@belihebe.com',
-          pass: 'belihebe2020'
-       },
-       tls: {
+   const trnasporter = nodemailer.createTransport({
+      host: 'mail.belihebe.com',
+      port: 587,
+      secure: false,
+      auth: {
+         user: 'test@belihebe.com',
+         pass: 'belihebe2020'
+      },
+      tls: {
          rejectUnauthorized: false
-       }
-    })
+      }
+   })
 
 
-   const info = await  trnasporter.sendMail({
-       from: "'Perfildev'  <test@belihebe.com>",
-       to: 'perfldev@gmail.com',
-       subject: 'Formulario de contacto perfildev',
-       html: contentHTML
-    })
+   const info = await trnasporter.sendMail({
+      from: "'Perfildev'  <test@belihebe.com>",
+      to: 'perfldev@gmail.com',
+      subject: 'Formulario de contacto perfildev',
+      html: contentHTML
+   })
 
-    console.log('Message sent', info.messageId)
-
-   res.redirect('/')
+   console.log('Message sent', info.messageId)
+   req.flash('send', 'Ya Eres parte de Perfildev con Exito 😃')
+   res.redirect('/#send-email')
 })
 
 module.exports = router

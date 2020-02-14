@@ -2,6 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* nav */
 
 .social-list li {
@@ -13,6 +14,7 @@ body {
     border-radius: 50%;
     padding-top: 2px;
 }
+
 
 /* Hero-perfildev */
 
@@ -44,12 +46,15 @@ body {
 .title-hero {
     font-family: 'Poppins', sans-serif;
 }
+
+
 /* formulario de ingreso */
 
 .input-group {
     position: relative;
     margin-bottom: 15px auto;
 }
+
 
 /* input*/
 
@@ -64,7 +69,7 @@ body {
     position: relative;
 }
 
-.input-area + .label {
+.input-area+.label {
     position: absolute;
     top: 13px;
     left: 5px;
@@ -83,11 +88,13 @@ body {
     transition: all 0.1s ease-in-out;
 }
 
-.input-area:focus + .label, .input-area.has_class + .label {
-   top:-8px;
-   color: rebeccapurple;
-   font-size: .7rem; 
+.input-area:focus+.label,
+.input-area.has_class+.label {
+    top: -8px;
+    color: rebeccapurple;
+    font-size: .7rem;
 }
+
 
 /* input-add */
 
@@ -102,7 +109,7 @@ body {
     position: relative;
 }
 
-.input-add + .label {
+.input-add+.label {
     position: absolute;
     top: 13px;
     left: 5px;
@@ -121,11 +128,13 @@ body {
     transition: all 0.1s ease-in-out;
 }
 
-.input-add:focus + .label, .input-add.has_class + .label {
-   top:-8px;
-   color: rebeccapurple;
-   font-size: .7rem; 
+.input-add:focus+.label,
+.input-add.has_class+.label {
+    top: -8px;
+    color: rebeccapurple;
+    font-size: .7rem;
 }
+
 
 /* input-edit */
 
@@ -140,7 +149,7 @@ body {
     position: relative;
 }
 
-.input-edit + .label {
+.input-edit+.label {
     position: absolute;
     top: 13px;
     left: 5px;
@@ -159,10 +168,11 @@ body {
     transition: all 0.1s ease-in-out;
 }
 
-.input-edit:focus + .label, .input-edit.has_class + .label {
-   top:-8px;
-   color: rebeccapurple;
-   font-size: .7rem; 
+.input-edit:focus+.label,
+.input-edit.has_class+.label {
+    top: -8px;
+    color: rebeccapurple;
+    font-size: .7rem;
 }
 
 
@@ -192,7 +202,9 @@ body {
     text-align: left;
 }
 
+
 /* endtutorial */
+
 
 /* conainer-box */
 
@@ -202,6 +214,7 @@ body {
     padding-top: 100px;
     padding-bottom: 100px;
 }
+
 
 /* Buscador */
 
@@ -233,8 +246,8 @@ body {
     color: blueviolet;
 }
 
-/* seccion-about */
 
+/* seccion-about */
 
 .hero-showcases {
     position: relative;
@@ -264,7 +277,9 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* endseccion-about */
+
 
 /* testimonios */
 
@@ -286,7 +301,9 @@ body {
     max-width: 18rem;
 }
 
+
 /* endtestimonios */
+
 
 /* text-alert */
 
@@ -294,7 +311,9 @@ body {
     font-size: 35px;
 }
 
+
 /* endtext-alert */
+
 
 /* registrate a la comunidad */
 
@@ -330,8 +349,8 @@ body {
         flex: 0 0 58.333333%;
         max-width: 58.333333%;
     }
-    
 }
+
 
 /* endregistrate a la comunidad */
 
@@ -354,7 +373,9 @@ body {
     text-align: left;
 }
 
+
 /* endabout */
+
 
 /* footer */
 
@@ -363,5 +384,42 @@ footer.footer {
     padding-bottom: 4rem;
 }
 
+
 /* endfooter */
 
+
+/* profile */
+
+
+/* banner-profile */
+
+.profile-hero {
+    position: relative;
+    top: 0;
+    height: 65vh;
+    width: 100%;
+    background: url(../img/bg-perfildev-about.svg);
+    background-size: cover;
+}
+
+.content-hero-profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.profile-content-100 {
+    height: 65vh;
+}
+
+.h100-profile {
+    height: 50%;
+}
+
+
+/* endbanner-profile */
+
+
+/* endprofile */

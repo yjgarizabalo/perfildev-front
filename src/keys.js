@@ -2,7 +2,7 @@ module.exports = {
     database: {
         host:  'localhost',
         user:  'root',
-        password: 'Perfildev#19#_dev',
+        password: '##graphitech_7',
         database: 'database_perfildev'
     }
 }

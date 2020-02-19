@@ -16,7 +16,7 @@ body {
 }
 
 
-/* Hero-perfildev */
+/* Hero-perfildev  index*/
 
 .hero {
     position: relative;
@@ -46,6 +46,21 @@ body {
 .title-hero {
     font-family: 'Poppins', sans-serif;
 }
+
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 20px;
+    }
+    .hero h1 {
+        font-size: 1.7em;
+    }
+}
+
+
+/* end-Hero-perfildev index */
 
 
 /* formulario de ingreso */
@@ -306,6 +321,15 @@ body {
 
 
 /* text-alert */
+
+@media (max-width: 768px) {
+    .alerta {
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+        margin: auto
+    }
+}
 
 .text-alert a {
     font-size: 35px;

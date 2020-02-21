@@ -7,7 +7,7 @@ const session = require('express-session')
 const MySQLStore = require('express-mysql-session')
 const passport = require('passport')
 
-const  { database } = require('./keys')
+const { database } = require('./keys')
 
 // inicilizador
 const app = express()
@@ -35,15 +35,16 @@ app.use(session({
 }))
 app.use(flash())
 app.use(morgan('dev'))
-app.use(express.urlencoded({extended: false}))
+app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(passport.initialize())
 app.use(passport.session())
 
 // variables globales
-app.use((req, res, next) =>{
+app.use((req, res, next) => {
     app.locals.success = req.flash('success')
     app.locals.send = req.flash('send')
+    app.locals.send = req.flash('contact')
     app.locals.message = req.flash('message')
     app.locals.user = req.user
     next()
@@ -52,8 +53,9 @@ app.use((req, res, next) =>{
 // routes
 app.use(require('./routes/'))
 app.use(require('./routes/authentication'))
-app.use('/links',require('./routes/links'))
+app.use('/links', require('./routes/links'))
 app.use(require('./routes/send-email')) // ruta para enviar email
+app.use(require('./routes/send-contact')) // ruta para enviar info de contacto
 
 
 

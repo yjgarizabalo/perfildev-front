@@ -4,13 +4,12 @@
             <div id="" class="col-sm-6">
                 <h1 class="title-hero site-headline font-weight-bold mb-3">Contactanos 📞</h1>
                 <p>Para mayor información, deja tu mensaje pronto nuestro equipo se pondra en contacto contigo.
-                <span class="h6 text-primary font-weight-bolder">¡Buscamos</span> <span id="app"
-                    class="h6 text-primary font-weight-bolder"></span>
+                    <span class="h6 text-primary font-weight-bolder">¡Buscamos</span> <span id="app"
+                        class="h6 text-primary font-weight-bolder"></span>
                 </p>
-                <img src="" alt="Iniciar seccion" srcset="">
             </div>
 
-            <div class="col-sm-6 p-4">
+            <div class="col-sm-6 p-2">
                 <div class="row">
                     <div class="mx-auto">
                         <div class="card bg-transparent text-center">
@@ -20,22 +19,25 @@
                             <div class="card-body">
                                 <img src="../assets/img/perfildev-logo-dark.svg" alt="Logo perfildev"
                                     class="card-img-top mx-auto m-4  w-50">
-                                <form action="/signin" method="POST">
+                                <form action="/contact" method="POST">
                                     <div class="form-group">
                                         <input type="text" name="nombre" placeholder="Nombre y Apellido"
                                             class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" name="asunto" placeholder="Asunto"
+                                        <input type="email" name="email" placeholder="Correo Electronico"
                                             class="form-control">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" placeholder="Escribe tu mensaje ✏️"
-                                            rows="s"></textarea>
+                                        <input type="text" name="asunto" placeholder="Asunto" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="mensaje"
+                                            placeholder="Escribe tu mensaje ✏️" rows="s"></textarea>
                                     </div>
 
                                     <div class="from-control">
-                                        <button class="btn btn-success btn-block">Enviar</button>
+                                        <button type="submit" class="btn btn-success btn-block">Enviar</button>
                                     </div>
                                 </form>
                             </div>

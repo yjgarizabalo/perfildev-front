@@ -20,7 +20,7 @@ router.post('/contact', async(req, res) => {
         port: 587,
         secure: false,
         auth: {
-            user: 'test@belihebe.com',
+            user: 'contacto@belihebe.com',
             pass: 'belihebe2020'
         },
         tls: {
@@ -30,7 +30,7 @@ router.post('/contact', async(req, res) => {
 
 
     const info = await trnasporter.sendMail({
-        from: "'Perfildev'  <test@belihebe.com>",
+        from: "'Contacto - Perfildev'  <contacto@belihebe.com>",
         to: 'perfldev@gmail.com',
         subject: 'Formulario de contacto perfildev',
         html: contentHTML

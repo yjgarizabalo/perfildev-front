@@ -43,8 +43,8 @@ app.use(passport.session())
 // variables globales
 app.use((req, res, next) => {
     app.locals.success = req.flash('success')
-    app.locals.send = req.flash('send')
-    app.locals.send = req.flash('contact')
+    app.locals.newsletter = req.flash('newsletter')
+    app.locals.contact = req.flash('contact')
     app.locals.message = req.flash('message')
     app.locals.user = req.user
     next()
@@ -54,7 +54,7 @@ app.use((req, res, next) => {
 app.use(require('./routes/'))
 app.use(require('./routes/authentication'))
 app.use('/links', require('./routes/links'))
-app.use(require('./routes/send-email')) // ruta para enviar email
+app.use(require('./routes/newsletter')) // ruta para enviar email
 app.use(require('./routes/send-contact')) // ruta para enviar info de contacto
 
 

@@ -10,7 +10,7 @@ router.post('/haz-parte', async (req, res) => {
    contentHTML = `
        <h1>Informacion de usuario</h1>
        <ul>
-          <li>Email: ${email}</li>
+          <li>Email: ${ email }</li>
        </ul>
     `
    const trnasporter = nodemailer.createTransport({
@@ -18,7 +18,7 @@ router.post('/haz-parte', async (req, res) => {
       port: 587,
       secure: false,
       auth: {
-         user: 'test@belihebe.com',
+         user: 'contacto@belihebe.com',
          pass: 'belihebe2020'
       },
       tls: {
@@ -28,14 +28,14 @@ router.post('/haz-parte', async (req, res) => {
 
 
    const info = await trnasporter.sendMail({
-      from: "'Perfildev'  <test@belihebe.com>",
+      from: "'Perfildev'  <contacto@belihebe.com>",
       to: 'perfldev@gmail.com',
-      subject: 'Formulario de contacto perfildev',
+      subject: 'Formulario newsletter perfildev',
       html: contentHTML
    })
 
    console.log('Message sent', info.messageId)
-   req.flash('send', 'Ya Eres parte de Perfildev con Exito 😃')
+   req.flash('newsletter', 'Eres parte de Perfildev con Exito 😃')
    res.redirect('/#send-email')
 })
 

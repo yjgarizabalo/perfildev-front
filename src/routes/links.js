@@ -83,11 +83,4 @@ router.get('/politicas', (req, res) => {
     res.render('links/politicas.hbs')
 })
 
-// terminos
-
-router.get('/terminos', (req, res) => {
-    res.render('links/terminos.hbs')
-})
-
-
 module.exports = router

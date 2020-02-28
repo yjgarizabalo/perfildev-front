@@ -14,12 +14,12 @@ router.post('/haz-parte', async (req, res) => {
        </ul>
     `
    const trnasporter = nodemailer.createTransport({
-      host: 'mail.belihebe.com',
-      port: 587,
-      secure: false,
+      host: 'mail.kingdomplus.org',
+      port: 465,
+      secure: true,
       auth: {
-         user: 'contacto@belihebe.com',
-         pass: 'belihebe2020'
+         user: 'contacto@kingdomplus.org',
+         pass: 'kingdomplus2018'
       },
       tls: {
          rejectUnauthorized: false
@@ -28,7 +28,7 @@ router.post('/haz-parte', async (req, res) => {
 
 
    const info = await trnasporter.sendMail({
-      from: "'Perfildev'  <contacto@belihebe.com>",
+      from: "'Perfildev'  <contacto@kingdomplus.org>",
       to: 'perfldev@gmail.com',
       subject: 'Formulario newsletter perfildev',
       html: contentHTML

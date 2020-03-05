@@ -1,63 +1,22 @@
+// importar vistas
+
+// inicio
+@import "components/index";
+// ¿que es perfildev?
+@import "components/about";
+// politicas
+@import "components/politicas";
+//contacto
+@import "components/contact";
+
+// end importar vistas
+
+
+
 body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* nav */
-
-.social-list li {
-    font-size: 1.125rem;
-    background: #f5f6fe;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    border-radius: 50%;
-    padding-top: 2px;
-}
-
-/* Hero-perfildev  index*/
-
-.hero {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background: url(../img/bg-jobs-perfildev.svg);
-    background-size: cover;
-}
-
-.h100 {
-    height: 100%;
-}
-
-.content-100 {
-    height: 100vh;
-}
-
-.content-hero {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-
-.title-hero {
-    font-family: 'Poppins', sans-serif;
-}
-
-
-/* responsive */
-
-@media (max-width: 768px) {
-    .hero {
-        padding: 40px 20px 40px 20px;
-    }
-    .hero h1 {
-        font-size: 1.7em;
-    }
-}
-
-/* end-Hero-perfildev index */
 
 
 /* formulario de ingreso */
@@ -228,7 +187,7 @@ body {
 }
 
 
-/* Buscador */
+// buscador
 
 .buscador {
     position: relative;
@@ -258,63 +217,8 @@ body {
     color: blueviolet;
 }
 
+// end buscador
 
-/* seccion-about */
-
-.hero-showcases {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 70vh;
-    background-size: cover;
-}
-
-.h100-showcases {
-    height: 100%;
-}
-
-.content-100-showcases {
-    height: 100vh;
-}
-
-.content-hero-showcases {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-
-.title-hero-showcases {
-    font-family: 'Poppins', sans-serif;
-}
-
-
-/* endseccion-about */
-
-
-/* testimonios */
-
-.testimonials {
-    padding-top: 7rem;
-    padding-bottom: 7rem;
-}
-
-.testimonials .testimonial-item img {
-    max-width: 12rem;
-    box-shadow: 0 5px 5px 0 #adb5bd;
-}
-
-.rounded-circle {
-    border-radius: 50%!important;
-}
-
-.testimonials .testimonial-item {
-    max-width: 18rem;
-}
-
-
-/* endtestimonios */
 
 
 /* text-alert */
@@ -376,28 +280,6 @@ body {
 /* endregistrate a la comunidad */
 
 
-/* about */
-
-.hero-about {
-    position: relative;
-    top: 0;
-    width: 100%;
-    background: url(../img/bg-perfildev-about.svg);
-    background-size: cover;
-}
-
-.content-hero-about {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-
-
-/* endabout */
-
-
 /* footer */
 
 footer.footer {
@@ -439,9 +321,12 @@ footer.footer {
     height: 50%;
 }
 
-
 /* endbanner-profile */
 
+
+/* endprofile */
+
+/* animacion-loader*/
 
 .loader-page {
     position: fixed;
@@ -459,13 +344,13 @@ footer.footer {
   .loader-page::before {
     content: "";
     position: absolute;
-    border: 5px solid darkslateblue;
+    border: 5px solid rebeccapurple;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     box-sizing: border-box;
-    border-left: 2px solid rgba(50, 150, 176,0);
-    border-top: 2px solid rgba(50, 150, 176,0);
+    border-left: 4px solid rgba(50, 150, 176,0);
+    border-top: 4px solid rgba(50, 150, 176,0);
     animation: rotarload 1s linear infinite;
     transform: rotate(0deg);
   }
@@ -476,7 +361,7 @@ footer.footer {
   .loader-page::after {
     content: "";
     position: absolute;
-    border: 2px solid rgba(50, 150, 176,.5);
+    border: 5px solid rgba(50, 150, 176,.5);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -488,30 +373,3 @@ footer.footer {
   }
 
 /* end animacion-loader */
-
-/* polticas */
-
-.hero-politicas {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.h100-politicas {
-    height: 100%;
-}
-
-.content-100-politicas {
-    height: 100vh;
-}
-
-.content-hero-politicas {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: left;
-}
-
-/* end politcas */

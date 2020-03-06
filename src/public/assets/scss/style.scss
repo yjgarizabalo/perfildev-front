@@ -8,6 +8,8 @@
 @import "components/politicas";
 //contacto
 @import "components/contact";
+//navegacion
+@import "component/navegations";
 
 // end importar vistas
 
@@ -331,7 +333,7 @@ footer.footer {
 .loader-page {
     position: fixed;
     z-index: 25000;
-    background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255. 9);
     left: 0px;
     top: 0px;
     height: 100%;
@@ -344,13 +346,13 @@ footer.footer {
   .loader-page::before {
     content: "";
     position: absolute;
-    border: 5px solid rebeccapurple;
+    border: 5px solid #280144;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     box-sizing: border-box;
-    border-left: 4px solid rgba(50, 150, 176,0);
-    border-top: 4px solid rgba(50, 150, 176,0);
+    border-left: 4px solid rgba(40, 1, 68, 0);
+    border-top: 4px solid rgba(40, 1, 68, 0);
     animation: rotarload 1s linear infinite;
     transform: rotate(0deg);
   }
@@ -361,13 +363,13 @@ footer.footer {
   .loader-page::after {
     content: "";
     position: absolute;
-    border: 5px solid rgba(50, 150, 176,.5);
+    border: 5px solid rgba(40, 1, 68, .5);
     width: 60px;
     height: 60px;
     border-radius: 50%;
     box-sizing: border-box;
-    border-left: 2px solid rgba(50, 150, 176, 0);
-    border-top: 2px solid rgba(50, 150, 176, 0);
+    border-left: 2px solid rgba(40, 1, 68, 0);
+    border-top: 2px solid rgba(40, 1, 68, 0);
     animation: rotarload 1s ease-out infinite;
     transform: rotate(0deg);
   }

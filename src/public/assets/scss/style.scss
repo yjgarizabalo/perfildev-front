@@ -182,37 +182,6 @@ body {
   padding-bottom: 100px;
 }
 
-// buscador
-
-.buscador {
-  position: relative;
-}
-
-#searchList {
-  max-height: 0;
-  transition: max-height 0.2s ease;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-
-#searchList.is-visible {
-  max-height: 500px;
-  overflow: auto;
-}
-
-#searchList list-item {
-  padding: 0.75rem 1rem;
-  border: none;
-}
-
-#searchList list-item:hover {
-  background-color: #f5f5f5;
-  color: blueviolet;
-}
-
-// end buscador
 
 /* text-alert */
 

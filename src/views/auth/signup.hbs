@@ -33,19 +33,28 @@
                                 <img src="../assets/img/perfildev-logo-dark.svg" alt="Logo perfildev"
                                     class="card-img-top mx-auto m-4  w-50">
                                 <form action="/signup" method="POST">
-                                    <div class="form-group">
-                                        <input type="type" name="fullname" placeholder="Nombre Completo"
-                                            class="form-control" autofocus>
+                                    <div class="form-group text-left">
+                                        <label><small><b>Nombre Completo</b></small> </label>
+                                        <input type="text" name="fullname" class="form-control" id="nombre" aria-describedby="nombre">
+                                        <small id="emailHelp" class="form-text text-muted">Desbes suministrar tu primer
+                                            nombre y tu primer apellido</small>
                                     </div>
-                                    <div class="form-group">
-                                        <input type="text" name="username" placeholder="Usuario" class="form-control">
+                                    <div class="form-group text-left">
+                                        <label><small><b>Email</b></small> </label>
+                                        <input type="email" name="username" class="form-control">
                                     </div>
-                                    <div class="form-group">
-                                        <input type="password" name="password" placeholder="Constraseña"
-                                            class="form-control">
+                                    <div class="form-group text-left">
+                                        <label ><small><b>Contraseña</b></small></label>
+                                        <input type="password" name="password" class="form-control">
+                                    </div>
+                                    <div class="form-group form-check text-left">
+                                        <input type="checkbox" class="form-check-input" required>
+                                        <label class="form-check-label" for="exampleCheck1"><small>Aceptar terminanos,
+                                                <a class="text-primary" href="#"><b>terminos y
+                                                        condiciones</b></a></small></label>
                                     </div>
                                     <div class="from-control">
-                                        <button class="btn btn-success btn-block">Registarte</button>
+                                        <button class="btn btn-success btn-block">Registarte 🚀</button>
                                     </div>
                                 </form>
                             </div>

@@ -8,12 +8,11 @@
         <div class="content-hero content-100">
             <div id="" class="col-sm-6">
                 <h1 class="title-hero site-headline font-weight-bold mb-3">Es hora de ser el #1 ☝️</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime quibusdam odio, saepe
-                    repudiandae veritatis porro voluptatem quia.
+                <p>¡Muestra tu mejor perfildev!
                     <span id="app" class="text-primary font-weight-bolder"></span>
                     </span>
                 </p>
-                <img src="../assets/img/perfildev-signin.svg" alt="Iniciar seccion" srcset="">
+                {{!-- <img src="../assets/img/perfildev-signin.svg" alt="Iniciar seccion" srcset=""> --}}
             </div>
 
             <div class="col-sm-6 p-4">
@@ -27,17 +26,18 @@
                                 <img src="../assets/img/perfildev-logo-dark.svg" alt="Logo perfildev"
                                     class="card-img-top mx-auto m-4  w-50">
                                 <form action="/signin" method="POST">
-                                    <div class="form-group">
-                                        <input type="text" name="username" placeholder="Usuario" class="form-control">
+                                    <div class="form-group text-left">
+                                        <label><small><b>Email</b></small> </label>
+                                        <input type="email" name="username" class="form-control">
                                     </div>
-                                    <div class="form-group">
-                                        <input type="password" name="password" placeholder="Constraseña"
-                                            class="form-control">
+                                    <div class="form-group text-left">
+                                        <label><small><b>Contraseña</b></small></label>
+                                        <input type="password" name="password" class="form-control">
                                     </div>
-
                                     <div class="input-group mb-3">
                                         <a href="#" type=""
-                                            class="text-primary text-decoration-none font-weight-normal small">¿Has olvidado
+                                            class="text-primary text-decoration-none font-weight-normal small">¿Has
+                                            olvidado
                                             tu usuario?
                                         </a>
                                     </div>

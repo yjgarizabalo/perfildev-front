@@ -62,6 +62,11 @@ app.use(require('./routes/send-contact')) // ruta para enviar info de contacto
 // public
 app.use(express.static(path.join(__dirname, 'public')))
 
+//error 404
+app.use(function(req,res){
+    res.status(404).render('links/404.hbs');
+});
+
 // iniciar servidor
 app.listen(app.get('port'), () => {
     console.log('Server on port', app.get('port'))

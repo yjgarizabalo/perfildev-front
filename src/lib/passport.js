@@ -31,12 +31,13 @@ passport.use('local.signup', new LocalStrategy({
     passReqToCallback: true
 
 }, async (req, username, password, done) => {
-    const { fullname } = req.body
+    const { nombre, apellidos } = req.body
 
     const newUser = {
-        fullname,
         username,
-        password
+        password,
+        nombre,
+        apellidos
     }
 
     newUser.password = await helpers.encryptPassword(password)
